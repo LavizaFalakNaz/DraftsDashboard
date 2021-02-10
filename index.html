@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the Drafts dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--script 3-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--script 1-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--script 2-->
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <div class="checkdrop">
+                    <div class="chk">
+                        <input type="checkbox" id="select-menu" name="select" value=""></input>
+                    </div>
+                    <div class="drp">
+                        <div class="dropdown">
+                            <a href="#"><i class="fa fa-angle-down dropbtn"></i></a>
+                            <div class="dropdown-content">
+                              <a href="#">Delete</a>
+                              <a href="#">Publish</a>
+                              <a href="#">Merge</a>
+                            </div>
+                          </div>
+                    </div>                    
+                </div>
+                <div class="midnav">
+                    <div class="bar">
+                        <input type="text" placeholder="Search.." name="search">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="lastoptions">
+                    <a href="#"><i class="fas fa-trash-alt" style="color:#00ffd0;"></i></a><!--script 1-->
+                    <a href="#"><i class="fas fa-eye" style="color:#da00e6;"></i></a> <!--script 1-->
+                    <a href="#"><i class="fas fa-redo" style="color:#ffa72b;"></i></a> <!--script 1-->
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="left-column">
+                    <div class="sections">
+                        <div class="left-body">
+                            <div class="date">
+                                <p>Last Updated: 3rd January, 2020</p>
+                            </div>
+                            <!--IMPORT FROM DATABASE-->
+                            <div class="draft-content">
+                                <textarea>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</textarea>
+                            </div>
+                            <div class="files">
+                                <div class="file-list">
+                                    <!--RUN A LOOP TO CHECK THE NUMBER OF FILES IN THE DB AND CREATE THIS DIV-->
+                                    <div class="show-file">
+                                        <i class="fa fa-file set-icon" style="color:dodgerblue;"></i><a href="#"><p>filename.ext</p></a> <!--script 2-->
+                                    </div>
+                                </div>
+                                <div class="show-all">
+                                    <i class="glyphicon glyphicon-link set-icon" style="color:#da00e6;"></i> <!--script 3-->
+                                    <p><a href="#">View all files</a></p>
+                                </div>
+                            </div>
+                            <!--RUN A LOOP TO CHECK THE NUMBER OF FILES IN THE DB AND CREATE THIS DIV-->
+                            <div class="image-list">
+                                <i class="fas fa-image"></i> <!--script 1-->
+                            </div>
+                            <div class="buttons">
+                                <button class="btn1"><i class="fa fa-save"></i> Update</button>
+                                <button class="btn2"><i class="fa fa-trash"></i> Clear</button>
+                                <button class="btn3"><i class="fa fa-share"></i> Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <!--RUN A LOOP TO CHECK THE NUMBER OF FILES IN THE DB AND CREATE THIS DIV-->
+                    <div class="right-body">
+                        <div class="identity">
+                            <i class="glyphicon glyphicon-user" style="color:#ff8080;"></i> <!--script 3-->
+                            <p>Username</p>
+                        </div>
+                        <div class="saved-draft">
+                            <p>user content is saved here as loren ipsum loren ipsum loren ipsum</p>
+                        </div>
+                        <div class="tools">
+                            <div class="tools-checkbox">
+                                <input type="checkbox" id="select-item" name="select" value=""></input>
+                            </div>
+                            <div class="tools-icons">
+                                <a href="#"><i class="glyphicon glyphicon-thumbs-up set-icon" style="color:#00ffd0;"></i></a><!--script 3-->
+                                <a href="#"><i class="glyphicon glyphicon-link set-icon" style="color:#da00e6;"></i></a> <!--script 3-->
+                                <a href="#"><i class="glyphicon glyphicon-copy set-icon" style="color:#ffa72b;"></i></a> <!--script 3-->
+                                <!--THIS IS THE NEW DRAFT OPTION. IT IS A FLOATING BUTTON AND CAN BE ADJUSTED ANYWHERE-->
+                                <a href="#" class="float">
+                                    <i class="fa fa-plus my-float"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
